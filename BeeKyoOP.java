@@ -9,8 +9,6 @@ public class BeeKyoOP {
 	System.out.printf("%d==%d의 결과:%b%n",num1,num2,b);
 	//false
 	b=num1!=num2;
-	
-
 	}
 
 }
