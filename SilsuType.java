@@ -1,5 +1,6 @@
 package datatype01;
 
+import java.math.BigDecimal;
 public class SilsuType {
 
 	public static void main(String[] args) {
@@ -40,17 +41,26 @@ public class SilsuType {
 		System.out.println(iarea);
 		System.out.println((int)farea);
 		System.out.println((int)darea);
-		
 		*/
+		// 부동 소수
+		// 장점 큰 수를 다룰수 있다.
+		// 해결방법 클래스를 이용해야한다.
 		double d1=0.1, d2=0.2;
 		System.out.println(d1+d2);//예상:0.3
 		System.out.println(d1*d2);//예상:0.02
+		System.out.println(d1+d2==0.3);
 		
+		BigDecimal big4 = new BigDecimal("0.1");
+		BigDecimal big5 = new BigDecimal("0.2");
+		BigDecimal big6 = big4.add(big5);
+		System.out.println(big6);
+		//
+		System.out.println(big6.compareTo(new BigDecimal(0.3)));
+		System.out.println(big6.compareTo(new BigDecimal("0.3")));
 		
-		
-		
-		
-		
+		String a = new String("123");
+		String b = new String("124");
+		System.out.println(a.compareTo(b));
 	}
 
 }
