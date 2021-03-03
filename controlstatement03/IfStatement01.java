@@ -36,27 +36,27 @@ public class IfStatement01 {
 	}
 	*/
 	
-//	System.out.println("한 문자를 입력하세요");
-//	int asciiCode=System.in.read();
-//	System.out.println("사용자가 입력한 아스키 코드값:"+asciiCode);
-//	System.out.println("사용자가 입력한 아스키 코드값:"+(char)asciiCode);
+	System.out.println("한 문자를 입력하세요");
+	int asciiCode=System.in.read();
+	System.out.println("사용자가 입력한 아스키 코드값:"+asciiCode);
+	System.out.println("사용자가 입력한 아스키 코드값:"+(char)asciiCode);
 	
-////	사용자가 입력한 문자가 숫자인지 아닌지를 판단하자.
-////	1] 아스키 코드값을 알 때
-//	boolean isNumber=asciiCode>=48 && asciiCode<=57;// 0이 48이다.
-//	if(isNumber) System.out.println("입력한 문자는 숫자다.");
-//	if(!isNumber) System.out.println("입력한 문자는 숫자가 아니다.");
+//	사용자가 입력한 문자가 숫자인지 아닌지를 판단하자.
+//	1] 아스키 코드값을 알 때
+	boolean isNumber=asciiCode>=48 && asciiCode<=57;// 0이 48이다.
+	if(isNumber) System.out.println("입력한 문자는 숫자다.");
+	if(!isNumber) System.out.println("입력한 문자는 숫자가 아니다.");
 	
-////	2] 아스키 코드값을 모를 때
-//	boolean isNumber=asciiCode>='0' && asciiCode<='9';
-//	if(isNumber) System.out.println("입력한 문자는 숫자다.");
-//	if(!isNumber) System.out.println("입력한 문자는 숫자가 아니다.");
+//	2] 아스키 코드값을 모를 때
+	isNumber=asciiCode>='0' && asciiCode<='9';
+	if(isNumber) System.out.println("입력한 문자는 숫자다.");
+	if(!isNumber) System.out.println("입력한 문자는 숫자가 아니다.");
 	
 //	//3] quiz
 	
 	System.out.println("1. 한 문자를 입력하세요");
-	int asciiCode=System.in.read();
-	boolean isNumber = (asciiCode>=48 && asciiCode<=57) || 
+	asciiCode=System.in.read();
+	isNumber = (asciiCode>=48 && asciiCode<=57) || 
 						(asciiCode>=65 && asciiCode<=90) || 
 						(asciiCode>=97 && asciiCode<=122);
 	if(isNumber) System.out.println("알파벳 혹은 숫자.");
@@ -73,12 +73,12 @@ public class IfStatement01 {
 		System.out.println("2의 배수입니다.");
 	else
 		System.out.println("2의 배수가 아닙니다.");
-//	//방법2] if문 안의 if문으로 처리
-//	if(isMultiple) {
-//		isMultiple = (word-'0')%2==0;
-//		if(isMultiple) System.out.println("2의 배수입니다.");
-//		if(!isMultiple) System.out.println("2의 배수가 아닙니다.");
-//	}
+	//방법2] if문 안의 if문으로 처리
+	if(isMultiple) {
+		isMultiple = (word-'0')%2==0;
+		if(isMultiple) System.out.println("2의 배수입니다.");
+		if(!isMultiple) System.out.println("2의 배수가 아닙니다.");
+	}
 	}
 
 }
