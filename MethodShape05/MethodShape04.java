@@ -48,8 +48,6 @@ public class MethodShape04 {
 		for(int i=0;i<input;i++) {
 			System.out.println(i+1+"번쨰 숫자를 입력하세요");
 			output[i]=sc.nextInt();
-		}
-		for(int i=0;i<input;i++) {
 			if(output[i]>max) max=output[i];
 		}
 		return max; 

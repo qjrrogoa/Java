@@ -16,7 +16,7 @@ public class MethodShape02 {
 		//System.out.println("return문 이후");
 	}
 	/*
-	 * 사용자로부터 국영수 점수를 입력받아 평균을 구해학점을 반환하는 메소드 정의
+	 * 사용자로부터 국영수 점수를 입력받아 평균을 구해 학점을 반환하는 메소드 정의
 	 * 예] "A학점"
 	 */
 	static String getGrade() {
@@ -34,7 +34,7 @@ public class MethodShape02 {
 			jumsu[i]=sc.nextInt();
 			total+=jumsu[i];
 		}
-		//방법1] 직접 return, breakans qnfvlfdy
+		//방법1] 직접 return, break문 불필요 
 		/*
 		switch(total/30) {
 		case 10:
@@ -85,7 +85,6 @@ public class MethodShape02 {
 		char bchar=(char)System.in.read();
 		System.out.println("숫자 하나를 입력하시오 : ");
 		int cnum=sc.nextInt();
-		String Value;
 		switch(bchar) {
 		case '+':
 		System.out.printf("%d %s %d = %d%n",anum,bchar,cnum,anum+cnum);
@@ -107,8 +106,9 @@ public class MethodShape02 {
 	//방법1] 반환값 변수에 저장
 	int value=noParamYesReturn();
 	System.out.println("1부터 10까지 누적 합 : "+value);
+	//방법2] 반환값 바로 출력
 	System.out.println("1부터 10까지 누적 합 : "+noParamYesReturn());
-	// System.out.println("당신의 학점은 : "+getGrade());
+	System.out.println("당신의 학점은 : "+getGrade());
 	System.out.println("입력한 연산자는 "+getOperator());
 	}///main
 }////class
