@@ -3,6 +3,7 @@ package constructor15;
 class Point{
 	//[멤버 변수]
 	private int x,y;
+	
 	//[기본 생성자]
 	public Point() {
 		//this();//[x]Recursive발생;
@@ -12,7 +13,7 @@ class Point{
 		*/
 		this(1,1);
 		System.out.println("기본 생성자");
-		//this(); 첫번째 문장에 나와야한다..
+		//this(); 첫번째 문장에 나와야한다.
 	}
 	//[인자 생성자]
 	public Point(int x) {
@@ -44,10 +45,11 @@ public class Constructor03 {
 		Point point1 = new Point();
 		point1.print();
 		
-		Point point2 = new Point(10);
-		point2.print();
-		
-		Point point3 = new Point(10,20);
-		point3.print();
+//		//[인자 생성자로 객체 생성]
+//		Point point2 = new Point(10);
+//		point2.print();
+//		
+//		Point point3 = new Point(10,20);
+//		point3.print();
 	}////main
 }///class
